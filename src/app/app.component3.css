@@ -1,0 +1,47 @@
+p {
+    font-family: Lato;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+  
+main {
+    margin: 0 auto;
+    width: 50rem;
+}
+  
+table {
+    border: 1px solid rgb(121, 121, 121);
+}
+  
+thead {
+    background-color: rgb(202, 202, 202);
+}
+  
+th,
+td {
+    border: 1px solid rgb(121, 121, 121);
+    width: 15rem;
+    padding: 0.2rem;
+    text-align: left;
+}
+  
+.numero {
+    text-align: right;
+}
+  
+h1 {
+    color: rgb(86, 117, 255);
+    padding-bottom: 10px;
+}
+  
+.aprovacao {
+    background-color: lightgreen;
+}
+  
+.recuperacao {
+    background-color: orange;
+}

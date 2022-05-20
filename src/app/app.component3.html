@@ -1,0 +1,45 @@
+<main>
+    <h1>{{ title }}</h1>
+    <table>
+      <thead>
+        <th>Nome</th>
+        <th>Nascimento</th>
+        <th>Curso</th>
+        <th>Semestre</th>
+        <th>Unidade Curricular</th>
+        <th>Nota</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let aluno of alunos">
+          <ng-container [ngSwitch]="aluno.nome">
+            <ng-container *ngSwitchCase="'Ana'">
+              <td class="aprovacao">{{ aluno.nome }}</td>
+              <td class="aprovacao">{{ aluno.dataNascimento }}</td>
+              <td class="aprovacao">{{ aluno.curso }}</td>
+              <td class="numero aprovacao">{{ aluno.semestre }}</td>
+              <td class="aprovacao">{{ aluno.unidadeCurricular }}</td>
+              <td class="numero aprovacao">{{ aluno.nota }}</td>
+            </ng-container>
+            <ng-container *ngSwitchCase="'Danilo'">
+              <td class="recuperacao">{{ aluno.nome }}</td>
+              <td class="recuperacao">{{ aluno.dataNascimento }}</td>
+              <td class="recuperacao">{{ aluno.curso }}</td>
+              <td class="numero recuperacao">{{ aluno.semestre }}</td>
+              <td class="recuperacao">{{ aluno.unidadeCurricular }}</td>
+              <td class="numero recuperacao">{{ aluno.nota }}</td>
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              <td>{{ aluno.nome }}</td>
+              <td>{{ aluno.dataNascimento }}</td>
+              <td>{{ aluno.curso }}</td>
+              <td>{{ aluno.semestre }}</td>
+              <td>{{ aluno.unidadeCurricular }}</td>
+              <td>{{ aluno.nota }}</td>
+            </ng-container>
+          </ng-container>
+          
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  

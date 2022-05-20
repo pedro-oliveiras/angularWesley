@@ -1,0 +1,27 @@
+table, td, th {
+    border: 1px solid rgb(111, 111, 111);
+    text-align: left;
+}
+
+table {
+    background-color: rgb(216, 216, 216);
+    margin: 0 auto;
+}
+
+th {
+    background-color: rgb(227, 227, 227);
+}
+
+td {
+    background-color: white;
+}
+
+td, th {
+    width: 12rem;
+    padding: 10px 5px;
+}
+
+.semestre {
+    text-align: right;
+}
+
