@@ -15,8 +15,8 @@ export class AppComponent {
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component3.html',
-  styleUrls: ['./app.component3.css'],
+  templateUrl: './app.component4.html',
+  styleUrls: ['./app.component4.css'],
 })
 export class AppComponent {
   title = 'Alunos';

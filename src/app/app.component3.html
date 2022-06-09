@@ -29,15 +29,25 @@
               <td class="numero recuperacao">{{ aluno.nota }}</td>
             </ng-container>
             <ng-container *ngSwitchDefault>
-              <td>{{ aluno.nome }}</td>
-              <td>{{ aluno.dataNascimento }}</td>
-              <td>{{ aluno.curso }}</td>
-              <td>{{ aluno.semestre }}</td>
-              <td>{{ aluno.unidadeCurricular }}</td>
-              <td>{{ aluno.nota }}</td>
+              <ng-container *ngIf="aluno.nota <= 40; else blocoElse">
+                <td class="reprovacao">{{ aluno.nome }}</td>
+                <td class="reprovacao">{{ aluno.dataNascimento }}</td>
+                <td class="reprovacao">{{ aluno.curso }}</td>
+                <td class="reprovacao">{{ aluno.semestre }}</td>
+                <td class="reprovacao">{{ aluno.unidadeCurricular }}</td>
+                <td class="reprovacao">{{ aluno.nota }}</td>
+              </ng-container>     
+              <ng-template #blocoElse>
+                <td>{{ aluno.nome }}</td>
+                <td>{{ aluno.dataNascimento }}</td>
+                <td>{{ aluno.curso }}</td>
+                <td>{{ aluno.semestre }}</td>
+                <td>{{ aluno.unidadeCurricular }}</td>
+                <td>{{ aluno.nota }}</td>
+              </ng-template> 
             </ng-container>
           </ng-container>
-          
+              
         </tr>
       </tbody>
     </table>

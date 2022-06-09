@@ -1,0 +1,50 @@
+<!--h2><span class="campo">Nome: </span>{{ aluno.nome | uppercase}}</h2>
+<h3><span class="campo">Data de Nascimento: </span>{{ aluno.nascimento }}</h3>
+<h3><span class="campo">Curso: </span>{{ aluno.curso }}</h3>
+<h3><span class="campo">Semestre: </span>{{ aluno.semestre }}</h3>
+<h3><span class="campo">Unidade Curricular: </span>{{ aluno.unidade }}</h3>
+<h3><span class="campo">Nota: </span>{{ aluno.nota }}</h3-->
+
+<div class="container">
+    <div class="lside">
+        <table>
+            <tr>
+                <td><label for="nome">Nome: </label></td>
+                <td><input id="nome" [(ngModel)]="aluno.nome" placeholder="nome"></td>
+            </tr>
+            <tr>
+                <td><label for="nascimnto">Data de nascimento: </label></td>
+                <td><input id="nascimento" [(ngModel)]="aluno.nascimento" placeholder="nome"></td>
+            </tr>
+            <tr>
+                <td><label for="curso">Curso: </label></td>
+                <td><input id="curso" [(ngModel)]="aluno.curso" placeholder="nome"></td>
+            </tr>
+            <tr>
+                <td><label for="semestre">Semestre: </label></td>
+                <td><input id="semestre" [(ngModel)]="aluno.semestre" placeholder="nome"></td>
+            </tr>
+            <tr>
+                <td><label for="unidadecurricular">Unidade Curricular: </label></td>
+                <td><input id="unidadecurricular" [(ngModel)]="aluno.unidade" placeholder="nome"></td>
+            </tr>
+            <tr>
+                <td><label for="nota">Nota: </label></td>
+                <td><input id="nota" [(ngModel)]="aluno.nota" placeholder="nome"></td>
+            </tr>
+        </table> 
+    </div>
+    <div class="rside">
+        <h2><span class='rotulo'>Nome</span>: {{aluno.nome | uppercase}}</h2>
+        <h3><span class='rotulo'>Data de Nascimento</span>: {{aluno.nascimento}}</h3>
+        <h3><span class='rotulo'>Curso</span>: {{aluno.curso}}</h3>
+        <h3><span class='rotulo'>Semestre</span>: {{aluno.semestre}}</h3>
+        <h3><span class='rotulo'>Unidade Curricular</span>:{{aluno.unidade}}</h3>
+        <h3><span class='rotulo'>Nota</span>: {{aluno.nota}}</h3>
+
+    </div>
+</div>    
+
+   
+
+
